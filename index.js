@@ -46,5 +46,6 @@ app.listen(getPort(), () => {
 });
 
 function getPort() {
-	return process.env.port || 3000;
+	console.dir(process.env);
+	return process.env.PORT || 3000;
 }
